@@ -1,3 +1,3 @@
 int main();
-char process_check;
-char proc;
+string process_check;
+string proc;
