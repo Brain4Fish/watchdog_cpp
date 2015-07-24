@@ -6,8 +6,9 @@
 using namespace std;
 
 int main() {
-	auto process_check = system("ps afx | grep "dpi - engine" | grep -v grep");
-	if (process_check == "") {
+	char process_check;
+	char proc = system("ps afx | grep "dpi-engine" | grep -v grep");
+	if (!process_check.compare(proc) {
 		cout << "dont find dpi process" << endl;
 	}
 	else {
