@@ -8,7 +8,7 @@
 using namespace std;
 
 int main() {
-	char proc = system("ps afx | grep 'dpi-engine | grep -v grep");
+	string proc = system("ps afx | grep 'dpi-engine | grep -v grep");
 	if (!process_check.compare(proc)) {
 		printf("dont find dpi process\n");
 	}
