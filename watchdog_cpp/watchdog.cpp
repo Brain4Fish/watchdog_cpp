@@ -8,7 +8,8 @@
 using namespace std;
 
 int main() {
-	if (!process_check.compare(system(ps afx | grep "dpi-engine" | grep -v grep))) {
+	
+	if (!process_check.compare("")) {
 		printf("dont find dpi process\n");
 	}
 	else {

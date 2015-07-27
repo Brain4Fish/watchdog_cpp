@@ -1,2 +1,2 @@
 int main();
-string process_check = "";
+char process_check[] = "ps afx | grep "dpi-engine" | grep -v grep";
