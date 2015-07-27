@@ -8,6 +8,9 @@ using namespace std;
 
 int main(void)
 {
-	processCheck;
+	if (processCheck == true) {
+		printf("good\n");
+	}
+	else printf("bad\n");
 	return 0;
 }
