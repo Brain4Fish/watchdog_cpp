@@ -9,11 +9,9 @@ using namespace std;
 
 int main() {
 	
-	if (!process_check.compare("")) {
-		printf("dont find dpi process\n");
+	if (isRunning("dpi-engine") == 0) {
+		printf("Dpi process found\n");
 	}
-	else {
-		printf("find dpi process\n");
-	}
+	else printf("Dpi process not found\n");
 	return 0;
 }
