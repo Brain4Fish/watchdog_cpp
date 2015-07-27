@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-bool processCheck(void) {
+bool processCheck() {
 	if (system("ps afx | grep 'dpi-engine' | grep -v grep") == true) {
 		printf("Dpi process found\n");
 		return 0;
